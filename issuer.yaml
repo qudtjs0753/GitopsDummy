@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: letsencrypt
+  namespace: my-awesome-app
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: kimhj4270@gmail.com
+    privateKeySecretRef:
+      name: letsencrypt
+    solvers:
+      - http01:
+          ingress:
+            class: nginx
