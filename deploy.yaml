@@ -27,7 +27,7 @@ metadata:
 spec:
   selector:
     app: go
-  type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 8080
