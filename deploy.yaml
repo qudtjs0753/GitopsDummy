@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: go
-          image: kimhj4270/godummyweb:v4.4
+          image: qudtjs0753/godummyweb:1.0
           ports:
             - containerPort: 8080
 ---
